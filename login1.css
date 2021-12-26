@@ -21,12 +21,15 @@ body{
     height: 100%;
     justify-content:center ;
     flex-wrap: nowrap;
-    max-width: 80%;
-    
+    max-width: 75%;
+
 }
+
+
 .leftSide{
-    display: flex;
+    display: block;
     justify-content: flex-start;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -42,13 +45,26 @@ body{
     min-width: 150px;
 
 }
+.leftSide input[type="text"],input[type="password"]{
+  display: flex;
+  margin:  auto;
+  margin-top: 25px;
+  text-align: left;
+  border: 2px solid rgb(7, 6, 6);
+  padding: 14px 10px;
+  height: 1px;
+  width: 60%;
+  background-color: white;
+}
+
 .leftSide input[type="submit"]{
     display: block;
-    
+    text-align: center;
     width: 40%;
     border: 3px solid black;
-    padding: 10px;
-    margin: 30px;
+    padding: 7px;
+    margin: auto;
+    margin-top: 100px;
     border-radius: 25px;
     font-family: fantasy;
     font-size: large;
@@ -69,16 +85,17 @@ body{
     padding-bottom: 20px;
     height: auto;
     width: 60%;
-    background-color: rgb(51, 50, 50);
+    background-color: rgb(58, 57, 57);
     min-width: 250px;
     
     
 }
 .rightSide input[type="text"],.rightSide input[type="email"],.rightSide input[type="password"]{
-    border: 0;
+    border: none;
 
     display: block;
-    margin: 15px auto;
+    margin:  auto;
+    margin-top: 20px;
     text-align: left;
     border: 2px solid rgb(7, 6, 6);
     padding: 14px 10px;
@@ -86,13 +103,14 @@ body{
     width: 60%;
     background-color: white;
     
-    transition: 0.25px;
+    
 }
 .rightSide input[type="submit"]{
       display: block;
       border: 3px solid black;
       padding: 7px;
       margin: 30px auto;
+      margin-top: 60px;
       border-radius: 25px;
       width: 25%;
       font-family: fantasy;
@@ -101,32 +119,33 @@ body{
       min-width: fit-content;
 }
 .rightSide img{
-    border: 2px solid rgb(255, 255, 255);
     margin: 15px 15px 50px 15px;
    padding: auto;
     color: black;
     border-radius: 50%;
-}
-.rightSide input[type="radio"]  {
-    display: none;
-    padding: 10px;
-    color: white;
     
 }
+
+    
+    
+
 .leftSide img{
-    margin: 10px;
-    border: 3px solid white;
+    margin-left: 5px;
+    margin-top:-60px ;
+    margin-bottom:30px ;
     border-radius: 50%;
+    
 }
-label{
-    border: 3px solid rgb(255, 255, 255);
-    padding: 10px 20px ; 
-    color: white;
-    display:inline-block;
-    margin: 20px 30px;
-    cursor: pointer;
+.rightSide label{
+    border: none;
+    
 }
+
+
 p{
+  margin: auto;
+  margin-bottom: 15px;
+  margin-left: 10px;
     margin-top: 5px;
     font-family: fantasy;
     
@@ -138,11 +157,8 @@ p{
 .rightSide input[type="submit"]:hover{
     background-color: rgb(41, 109, 197);
 }
-.rightSide input[type="radio"]:checked + label {
-    background-color: rgb(41, 109, 197);
-    
-}
-.rightSide input[type="radio"]:checked + label :before {
-    background-color: blue;
-    border: 10px solid white;
-}
+
+
+  
+
+  
