@@ -1,0 +1,436 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+header{
+	width: 100%;
+	height: 10%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	position: fixed;
+
+}
+header .titulli{
+	width: 40%;
+}
+header h1{
+	color: orangered;
+	font-family: "Gill Sans MT";
+	text-align: center;
+}
+.titulli a{
+	text-decoration: none;
+	color: orangered;
+}
+header .list{
+	width: 60%;
+	margin-left: 200px;
+}
+.list li{
+	display: inline;
+	margin-left: 40px;
+}
+.list a{
+	font-family: "Gill Sans MT";
+	text-decoration:none;
+	color: black;
+}
+.list a:hover{
+	padding: 15px;
+	background-color: black;
+	color:orangered;
+	font-style: bold;
+}
+.sliderijasht{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	background: black;
+	align-items: center;
+	justify-content: center;
+}
+.slider{
+	width: 100%;
+	height:295px;
+	background: url(pht1.png);
+	animation: slide 10s infinite;
+}
+@keyframes slide{
+	25%{
+		background: url(pht1.png);
+
+	}
+	50%{
+		background: url(pht2.png);
+	}
+	75%{
+		background: url(pht3.png);
+	}
+	100%{
+		background: url(pht4.png);
+	}
+}
+.kits{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(rek.jpg);
+}
+.box-kontroll{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 400px;
+	align-items: center;
+	margin-top: 20px;
+}
+.metituj{
+	align-items: center;
+	display: flex;
+	width: 300px;
+	height: 300px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	background: darkred;
+}
+
+.box{
+	align-self: center;
+	display: flex;
+	width: 300px;
+	height: 300px;
+}
+#box1{
+
+	background:url(man.png);
+}
+#box2{
+	background: url(liv.png);
+}
+#box3{
+	background: url(rma.png);
+}
+
+.box:hover{
+	opacity: 0.4;
+	width: 320px;
+	height: 320px;
+	
+}
+.metituj:hover{
+	width: 320px;
+	height: 320px;
+
+	box-shadow: 30px 30px 3000px white;
+	filter: blur(10px;);
+}
+
+.standings{
+	width: 100%;
+	height: 600px;
+	background:url(mbappe.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.table{
+	opacity: 0.8;
+	margin-top: 40px;
+	width: 80%;
+	font-family: "Gill Sans MT";
+	border-collapse: collapse;
+	background-color: lightgray;
+}
+th{
+	background-color: orangered;
+	color: white;
+}
+th,td{
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+}
+.tbody tr{
+	border-bottom: 1px solid white;
+}
+
+#tr1{
+	background-color: black;
+}
+#tr2{
+	background-color: black;
+}
+tr #tr2,#tr1:hover{
+	background-color: darkred;
+}
+tr #tr1,#tr2:hover{
+	background-color: darkred;
+}
+.header2{
+	display: none;
+}
+
+.tickets{
+	width: 100%;
+	height: 400px;
+	background:url(tiback.jpg);
+	background-size: cover;
+}
+
+.tickets img{
+	margin-left: 40px;
+	margin-top: -100px;
+}
+.tickets h1{
+	margin-left: 800px;
+	padding-top: 40px;
+	color: white;
+	font-family: "Gill Sans MT";
+}
+.tickets a{
+	font-family: "Gill Sans MT";
+	font-size: 20px;
+	background-color: orangered;
+	margin-left: 870px;
+	padding: 30px;
+	border-radius: 20px;
+}
+.bt{
+	margin-top: -250px;
+}
+.bt a:hover{
+	background-color: black;
+	color: white;
+}
+.fundi{
+	width: 100%;
+	height: 300px;
+	background-color: gray;
+}
+.fundo{
+	padding-top: 30px;
+	display: flex;
+	margin-left: 30px;
+}
+.fundo h5{
+	padding: 10px;
+	text-align: center;
+}
+.f{
+	margin-left: 10px;
+	width: 30%;
+	height: 100px;
+}
+.f{
+	font-family: "Gill Sans MT";
+	font-size: 15px;
+}
+.f p{
+	text-align: center;
+}
+.fundi h6{
+	text-align: center;
+	padding-top: 40px;
+	font-family: "Gill Sans MT";
+	font-size: 12px;
+
+}
+
+/* responsiviteti per telefon apo pajisje me te vogel*/
+
+@media screen and (max-width: 400px) {
+	.header1{
+		display: none;
+	}
+	.header2{
+		display: block;
+		width: 400px;
+		height: 350px;
+		position: fixed;	}
+	.titulli2{
+		background-color: transparent;
+		position: center;
+		width: 400px;
+	}
+	.titulli2 img{
+		margin-left: 152px;
+	}
+	.header2 li{
+		opacity: 0.9;
+		background-color: orangered;
+		color: orangered;
+		padding: 17px;
+	}
+	.header2 ul a{
+		color: white;
+		text-decoration: none;
+		font-family: "Gill Sans MT";
+	}
+	.header2 li:hover{
+		background-color: black;
+		color: orangered;
+	}
+	
+	/*//////////////////////NKET PJES PERFUNDON PJESA E SLIDERIT//////////////////////////////////////////*/
+	.slider{
+		width: 400px;
+		height:295px;
+		background: url(pht11.png);
+		animation: slide 10s infinite;
+	}
+	@keyframes slide{
+		25%{
+			background: url(pht11.png);
+		}
+		50%{
+			background: url(pht22.png);
+		}
+		75%{
+			background: url(pht33.png);
+		}
+		100%{
+			background: url(pht44.png);
+		}
+	}
+
+	/*SLIDERI I PREM PER 400 PX*/
+
+	.kits{
+		display: none;
+	}
+	.kits2{
+	width: 400px;
+	height: 800px;
+	display: block;
+	background: url(rek.jpg);
+	background-size: cover;
+}
+.box-kontroll2{
+	display: block;
+}
+.metituj2{
+	margin-left: 90px;
+	width: 200px;
+	height: 200px;
+}
+
+.box2{
+	width: 200px;
+	height: 200px;
+}
+#box21{
+
+	background:url(man.png);
+	background-size: cover;
+}
+#box22{
+	background: url(liv.png);
+	background-size: cover;
+	margin-top: 40px;
+}
+#box23{
+	background: url(rma.png);
+	background-size: cover;
+	margin-top: 40px;
+}
+
+.box2:hover{
+	opacity: 0.4;
+	width: 220px;
+	height: 220px;
+}
+.metituj2:hover{
+	width: 220px;
+	height: 220px;
+	background: darkred;
+	box-shadow: 30px 30px 3000px white;
+}
+/*
+.table thead{
+	display: none;
+}
+.table, .table tbody, .table tr, .table td{
+	opacity: 1;
+	display: block;
+	width: 300px;
+}
+*/
+.standings{
+	height: 3170px;
+	background: none;
+	background: midnightblue;
+
+}
+.table thead{
+	display: none;
+}
+.table,.table tbody,.table tr,.table td{
+	opacity: 1;
+	display: block;
+	width: 300px;
+}
+.table td:before{
+	content: attr(data-label);
+	position: absolute;
+	margin-left: -100px;
+	color: orangered;
+}
+
+.tickets{
+	width: 350px;
+	height: 600px;
+	background:url(tiback.jpg);
+	background-size: cover;
+}
+
+.tickets img{
+	width: 300px;
+	height: 300px;
+	margin-top: 30px;
+}
+.tickets h1{
+	margin-left: 100px;
+	padding-top: 40px;
+	color: white;
+	font-family: "Gill Sans MT";
+}
+.tickets a{
+	font-family: "Gill Sans MT";
+	font-size: 20px;
+	background-color: orangered;
+	margin-left: 85px;
+	padding: 30px;
+	border-radius: 20px;
+}
+.bt a:hover{
+	background-color: black;
+	color: white;
+}
+.bt{
+	padding-top: 300px;
+}
+.fundi{
+	width: 350px;
+	height: 600px;
+}
+.fundo{
+	display: block;
+	margin-left: 100px;
+}
+.f{
+	padding-top: 30px;
+}
+.fundi h6{
+	margin-top: 40px;
+}
+}
