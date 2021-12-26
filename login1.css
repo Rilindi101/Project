@@ -64,7 +64,7 @@ body{
     border: 3px solid black;
     padding: 7px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 25px;
     font-family: fantasy;
     font-size: large;
@@ -92,7 +92,6 @@ body{
 }
 .rightSide input[type="text"],.rightSide input[type="email"],.rightSide input[type="password"]{
     border: none;
-
     display: block;
     margin:  auto;
     margin-top: 20px;
