@@ -1,0 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.orders{
+	width: 700px;
+	height: 500px;
+	border: 1px solid black;
+	margin-top: 100px;
+	margin-left: 320px;
+	display: block;
+}
