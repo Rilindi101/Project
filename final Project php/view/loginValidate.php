@@ -26,7 +26,7 @@
                    $_SESSION['role'] = $user['role'];
                   // setcookie("username","$username",time()+(30*60));
                   // setcookie("username","$username",time()-(60*60));
-                   header("location:home.php");
+                   header("location:home.html");
                    exit();
 
                }else{
