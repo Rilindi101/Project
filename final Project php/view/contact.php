@@ -2,6 +2,9 @@
 include (home.php);
 session_start();
 echo "Username: ".$_SESSION['username'];
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
 ?>
 <html>
 <head>

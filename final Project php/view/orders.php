@@ -1,4 +1,10 @@
+<?php
+session_start();
 
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
+?>
 <?php
 $productId = $_GET['id'];
 include_once '../repository/productRepository.php';

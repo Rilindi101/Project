@@ -1,4 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION["username"])){
+    header("Location:home.php");
+}
 
+?>
 
 <!DOCTYPE html>
 <html>
@@ -53,6 +59,3 @@
 <script src="loginJS.js"></script>
     </body>
 </html>
-
-
-

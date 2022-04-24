@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+if($_SESSION['userType'] !='admin'){
+	header("Location:home.php");
+}
+
+if(!isset($_SESSION["username"])){
+    header("Location:login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +29,7 @@
   <a href="tickets.php">Tickets</a>
   <a href="ortable.php">Orders</a>
   <a href="titable.php">Cuts</a>
+  <a href="logout.php">LOG OUT</a>
 
 </div>
 

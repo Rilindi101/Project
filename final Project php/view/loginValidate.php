@@ -23,10 +23,10 @@
                    session_start();
                    $_SESSION['username'] = $username;
                    $_SESSION['password'] = $password;
-                   $_SESSION['role'] = $user['role'];
+                   $_SESSION['userType'] = $user['userType'];
                   // setcookie("username","$username",time()+(30*60));
                   // setcookie("username","$username",time()-(60*60));
-                   header("location:home.html");
+                   header("location:home.php");
                    exit();
 
                }else{
