@@ -1,6 +1,7 @@
 <?php
 $hide="";
 session_start();
+$_SESSION['username'] = $username;
 if(!isset($_SESSION['username'])){
   header("location:login.php");
 }else{
