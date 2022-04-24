@@ -1,0 +1,100 @@
+.rightSide p{
+
+    color:black;
+    font-family: fantasy;
+    
+    font-size: 25px;
+}
+span.psw {
+float: right;
+padding-top: 16px;
+ 
+}
+
+
+*{
+margin: 0;
+padding: 0;
+}
+body{
+display: flex;
+justify-content: center;  
+margin: 150px;
+background-image: url('field1.jpg');
+background-repeat: no-repeat;
+background-size: cover
+}
+
+
+#boxK{
+
+display: flex;
+flex-direction: row;
+border: 1px solid none;
+width: 100%;
+height: 100%;
+justify-content:center ;
+flex-wrap: nowrap;
+max-width: 75%;
+
+}
+
+.rightSide{
+
+text-align: center;
+align-items: center;
+display: block;
+border: 3px solid black;
+margin: 5px;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+height: auto;
+width: 60%;
+background-color: rgba(240, 240, 240, 0.548);
+min-width: 250px;
+
+
+}
+.rightSide input[type="text"],.rightSide input[type="email"],.rightSide input[type="password"]{
+border: none;
+display: block;
+margin:  auto;
+margin-top: 20px;
+text-align: left;
+border: 2px solid rgb(7, 6, 6);
+padding: 14px 10px;
+height: 1px;
+width: 60%;
+background-color: white;
+
+
+}
+.rightSide input[type="submit"]{
+  display: block;
+  border: 3px solid black;
+  padding: 7px;
+  margin: 30px auto;
+  margin-top: 60px;
+  border-radius: 25px;
+  width: 25%;
+  font-family: fantasy;
+  font-size: large;
+  cursor: pointer;
+  min-width: fit-content;
+}
+.rightSide img{
+margin: 15px 15px 50px 15px;
+padding: auto;
+color: black;
+border-radius: 50%;
+
+}
+.rightSide label{
+border: none;
+
+}
+.rightSide input[type="submit"]:hover{
+background-color: rgb(41, 109, 197);
+}
